@@ -1270,6 +1270,31 @@
   dependencies:
     http-proxy-middleware "^1.0.6"
 
+"@nuxtjs/vercel-builder@^0.21.2":
+  version "0.21.2"
+  resolved "https://registry.nlark.com/@nuxtjs/vercel-builder/download/@nuxtjs/vercel-builder-0.21.2.tgz#193152cd7629db5b6817f7cf90113a4395e45b88"
+  integrity sha1-GTFSzXYp21toF/fPkBE6Q5XkW4g=
+  dependencies:
+    "@nuxtjs/web-vitals" "^0.1.4"
+    "@vercel/build-utils" "2.10.0"
+    "@vercel/node-bridge" "1.3.2"
+    consola "2.15.3"
+    execa "^5.0.0"
+    fs-extra "9.1.0"
+    jiti "^1.4.0"
+    rc9 "^1.2.0"
+    replace-in-file "^6.2.0"
+    resolve-from "^5.0.0"
+    semver "7.3.4"
+
+"@nuxtjs/web-vitals@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.nlark.com/@nuxtjs/web-vitals/download/@nuxtjs/web-vitals-0.1.4.tgz#f7ecd908c7c6e42d3b9f2270267992ce6d7caeab"
+  integrity sha1-9+zZCMfG5C07nyJwJnmSzm18rqs=
+  dependencies:
+    defu "^3.2.2"
+    web-vitals "^1.1.0"
+
 "@nuxtjs/youch@^4.2.3":
   version "4.2.3"
   resolved "https://registry.npm.taobao.org/@nuxtjs/youch/download/@nuxtjs/youch-4.2.3.tgz#36f8b22df5a0efaa81373109851e1d857aca6bed"
@@ -1353,6 +1378,16 @@
     "@types/uglify-js" "*"
     "@types/webpack-sources" "*"
     source-map "^0.6.0"
+
+"@vercel/build-utils@2.10.0":
+  version "2.10.0"
+  resolved "https://registry.nlark.com/@vercel/build-utils/download/@vercel/build-utils-2.10.0.tgz#69b6e7f6d4572951d4c8409bd8d83a8d12c7e842"
+  integrity sha1-abbn9tRXKVHUyECb2Ng6jRLH6EI=
+
+"@vercel/node-bridge@1.3.2":
+  version "1.3.2"
+  resolved "https://registry.nlark.com/@vercel/node-bridge/download/@vercel/node-bridge-1.3.2.tgz#63b8f2b26ad078ee64b645313052727c63f7dfb5"
+  integrity sha1-Y7jysmrQeO5ktkUxMFJyfGP337U=
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
@@ -2410,6 +2445,15 @@ cli-width@^3.0.0:
   resolved "https://registry.npm.taobao.org/cli-width/download/cli-width-3.0.0.tgz#a2f48437a2caa9a22436e794bf071ec9e61cedf6"
   integrity sha1-ovSEN6LKqaIkNueUvwceyeYc7fY=
 
+cliui@^7.0.2:
+  version "7.0.4"
+  resolved "https://registry.npm.taobao.org/cliui/download/cliui-7.0.4.tgz#a0265ee655476fc807aea9df3df8df7783808b4f"
+  integrity sha1-oCZe5lVHb8gHrqnfPfjfd4OAi08=
+  dependencies:
+    string-width "^4.2.0"
+    strip-ansi "^6.0.0"
+    wrap-ansi "^7.0.0"
+
 coa@^2.0.2:
   version "2.0.2"
   resolved "https://registry.npm.taobao.org/coa/download/coa-2.0.2.tgz#43f6c21151b4ef2bf57187db0d73de229e3e7ec3"
@@ -2542,7 +2586,7 @@ connect@^3.7.0:
     parseurl "~1.3.3"
     utils-merge "1.0.1"
 
-consola@^2.10.0, consola@^2.15.0, consola@^2.15.3, consola@^2.6.0, consola@^2.9.0:
+consola@2.15.3, consola@^2.10.0, consola@^2.15.0, consola@^2.15.3, consola@^2.6.0, consola@^2.9.0:
   version "2.15.3"
   resolved "https://registry.npm.taobao.org/consola/download/consola-2.15.3.tgz#2e11f98d6a4be71ff72e0bdf07bd23e12cb61550"
   integrity sha1-LhH5jWpL5x/3LgvfB70j4Sy2FVA=
@@ -3594,16 +3638,7 @@ from2@^2.1.0:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
 
-fs-extra@^8.1.0:
-  version "8.1.0"
-  resolved "https://registry.nlark.com/fs-extra/download/fs-extra-8.1.0.tgz#49d43c45a88cd9677668cb7be1b46efdb8d2e1c0"
-  integrity sha1-SdQ8RaiM2Wd2aMt74bRu/bjS4cA=
-  dependencies:
-    graceful-fs "^4.2.0"
-    jsonfile "^4.0.0"
-    universalify "^0.1.0"
-
-fs-extra@^9.1.0:
+fs-extra@9.1.0, fs-extra@^9.1.0:
   version "9.1.0"
   resolved "https://registry.nlark.com/fs-extra/download/fs-extra-9.1.0.tgz#5954460c764a8da2094ba3554bf839e6b9a7c86d"
   integrity sha1-WVRGDHZKjaIJS6NVS/g55rmnyG0=
@@ -3612,6 +3647,15 @@ fs-extra@^9.1.0:
     graceful-fs "^4.2.0"
     jsonfile "^6.0.1"
     universalify "^2.0.0"
+
+fs-extra@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.nlark.com/fs-extra/download/fs-extra-8.1.0.tgz#49d43c45a88cd9677668cb7be1b46efdb8d2e1c0"
+  integrity sha1-SdQ8RaiM2Wd2aMt74bRu/bjS4cA=
+  dependencies:
+    graceful-fs "^4.2.0"
+    jsonfile "^4.0.0"
+    universalify "^0.1.0"
 
 fs-memo@^1.2.0:
   version "1.2.0"
@@ -3667,6 +3711,11 @@ gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
   resolved "https://registry.npm.taobao.org/gensync/download/gensync-1.0.0-beta.2.tgz#32a6ee76c3d7f52d46b2b1ae5d93fea8580a25e0"
   integrity sha1-MqbudsPX9S1GsrGuXZP+qFgKJeA=
+
+get-caller-file@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.nlark.com/get-caller-file/download/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
+  integrity sha1-T5RBKoLbMvNuOwuXQfipf+sDH34=
 
 get-intrinsic@^1.0.2, get-intrinsic@^1.1.1:
   version "1.1.1"
@@ -4441,7 +4490,7 @@ jest-worker@^26.5.0:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
-jiti@^1.3.0, jiti@^1.6.4:
+jiti@^1.3.0, jiti@^1.4.0, jiti@^1.6.4:
   version "1.9.1"
   resolved "https://registry.npm.taobao.org/jiti/download/jiti-1.9.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fjiti%2Fdownload%2Fjiti-1.9.1.tgz#d9e267fa050ddc52191f17d8af815d49a38ebafd"
   integrity sha1-2eJn+gUN3FIZHxfYr4FdSaOOuv0=
@@ -6520,6 +6569,20 @@ repeat-string@^1.6.1:
   resolved "https://registry.npm.taobao.org/repeat-string/download/repeat-string-1.6.1.tgz#8dcae470e1c88abc2d600fff4a776286da75e637"
   integrity sha1-jcrkcOHIirwtYA//Sndihtp15jc=
 
+replace-in-file@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.npm.taobao.org/replace-in-file/download/replace-in-file-6.2.0.tgz#9c0e381b0e02f27f83d5ba500bb4046f63d18566"
+  integrity sha1-nA44Gw4C8n+D1bpQC7QEb2PRhWY=
+  dependencies:
+    chalk "^4.1.0"
+    glob "^7.1.6"
+    yargs "^16.2.0"
+
+require-directory@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.nlark.com/require-directory/download/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
+  integrity sha1-jGStX9MNqxyXbiNE/+f3kqam30I=
+
 requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/requires-port/download/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
@@ -6534,6 +6597,11 @@ resolve-from@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/resolve-from/download/resolve-from-3.0.0.tgz#b22c7af7d9d6881bc8b6e653335eebcb0a188748"
   integrity sha1-six699nWiBvItuZTM17rywoYh0g=
+
+resolve-from@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npm.taobao.org/resolve-from/download/resolve-from-5.0.0.tgz#c35225843df8f776df21c57557bc087e9dfdfc69"
+  integrity sha1-w1IlhD3493bfIcV1V7wIfp39/Gk=
 
 resolve-url@^0.2.1:
   version "0.2.1"
@@ -6692,6 +6760,13 @@ semver@7.0.0:
   version "7.0.0"
   resolved "https://registry.npm.taobao.org/semver/download/semver-7.0.0.tgz?cache=0&sync_timestamp=1616463540350&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemver%2Fdownload%2Fsemver-7.0.0.tgz#5f3ca35761e47e05b206c6daff2cf814f0316b8e"
   integrity sha1-XzyjV2HkfgWyBsba/yz4FPAxa44=
+
+semver@7.3.4:
+  version "7.3.4"
+  resolved "https://registry.npm.taobao.org/semver/download/semver-7.3.4.tgz?cache=0&sync_timestamp=1616463540350&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemver%2Fdownload%2Fsemver-7.3.4.tgz#27aaa7d2e4ca76452f98d3add093a72c943edc97"
+  integrity sha1-J6qn0uTKdkUvmNOt0JOnLJQ+3Jc=
+  dependencies:
+    lru-cache "^6.0.0"
 
 semver@^5.6.0:
   version "5.7.1"
@@ -7747,6 +7822,11 @@ watchpack@^1.7.4:
     chokidar "^3.4.1"
     watchpack-chokidar2 "^2.0.1"
 
+web-vitals@^1.1.0:
+  version "1.1.2"
+  resolved "https://registry.nlark.com/web-vitals/download/web-vitals-1.1.2.tgz#06535308168986096239aa84716e68b4c6ae6d1c"
+  integrity sha1-BlNTCBaJhgliOaqEcW5otMaubRw=
+
 webpack-bundle-analyzer@^4.4.0:
   version "4.4.1"
   resolved "https://registry.npm.taobao.org/webpack-bundle-analyzer/download/webpack-bundle-analyzer-4.4.1.tgz?cache=0&sync_timestamp=1618302328082&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fwebpack-bundle-analyzer%2Fdownload%2Fwebpack-bundle-analyzer-4.4.1.tgz#c71fb2eaffc10a4754d7303b224adb2342069da1"
@@ -7938,6 +8018,11 @@ y18n@^4.0.0:
   resolved "https://registry.npm.taobao.org/y18n/download/y18n-4.0.3.tgz#b5f259c82cd6e336921efd7bfd8bf560de9eeedf"
   integrity sha1-tfJZyCzW4zaSHv17/Yv1YN6e7t8=
 
+y18n@^5.0.5:
+  version "5.0.8"
+  resolved "https://registry.nlark.com/y18n/download/y18n-5.0.8.tgz#7f4934d0f7ca8c56f95314939ddcd2dd91ce1d55"
+  integrity sha1-f0k00PfKjFb5UxSTndzS3ZHOHVU=
+
 yallist@^2.1.2:
   version "2.1.2"
   resolved "https://registry.npm.taobao.org/yallist/download/yallist-2.1.2.tgz#1c11f9218f076089a47dd512f93c6699a6a81d52"
@@ -7952,6 +8037,24 @@ yallist@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npm.taobao.org/yallist/download/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
   integrity sha1-m7knkNnA7/7GO+c1GeEaNQGaOnI=
+
+yargs-parser@^20.2.2:
+  version "20.2.7"
+  resolved "https://registry.npm.taobao.org/yargs-parser/download/yargs-parser-20.2.7.tgz#61df85c113edfb5a7a4e36eb8aa60ef423cbc90a"
+  integrity sha1-Yd+FwRPt+1p6TjbriqYO9CPLyQo=
+
+yargs@^16.2.0:
+  version "16.2.0"
+  resolved "https://registry.nlark.com/yargs/download/yargs-16.2.0.tgz?cache=0&sync_timestamp=1620087589105&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fyargs%2Fdownload%2Fyargs-16.2.0.tgz#1c82bf0f6b6a66eafce7ef30e376f49a12477f66"
+  integrity sha1-HIK/D2tqZur85+8w43b0mhJHf2Y=
+  dependencies:
+    cliui "^7.0.2"
+    escalade "^3.1.1"
+    get-caller-file "^2.0.5"
+    require-directory "^2.1.1"
+    string-width "^4.2.0"
+    y18n "^5.0.5"
+    yargs-parser "^20.2.2"
 
 yocto-queue@^0.1.0:
   version "0.1.0"
